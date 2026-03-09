@@ -2,9 +2,9 @@
 
 :root {
     --color-background-input-footer:#130F38;
-    --color-background-footer:      #1E1647;
-    --color-link-text:              #614AD3;
-    --color-text-e-icon:            #f9f9f9;
+    --roxo-escuro:                  #1E1647;
+    --roxo-claro:                   #614AD3;
+    --branco-leve:                  #f9f9f9;
 
 }
 
@@ -22,7 +22,7 @@ main {
 
 footer {
     width: 100%;
-    color: var(--color-text-e-icon);
+    color: var(--branco-leve);
 }
 
 .footer-link {
@@ -30,7 +30,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--color-background-footer);
+    background-color: var(--roxo-escuro);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -56,7 +56,7 @@ footer {
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
-    color: var(--color-text-e-icon);
+    color: var(--branco-leve);
     border-radius: 50%;
     transition: all 0.4s;
 }
@@ -92,7 +92,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-link-text);
+    color: var(--roxo-claro);
     transition: all 0.35s;
 }
 
@@ -108,7 +108,7 @@ footer {
 }
 
 .footer-contact-list .footer-link {
-    color: var(--color-link-text);
+    color: var(--roxo-claro);
     transition: all 0.35s;
 }
 
@@ -123,12 +123,12 @@ footer {
 }
 
 #footer_subscribe p {
-    color: var(--color-link-text);
+    color: var(--roxo-claro);
 }
 
 #footer_subtitle {
     text-align: left;
-    background-color: var(--color-background-footer);
+    background-color: var(--roxo-escuro);
     font-size: 1.25rem;
     /* padding: 1rem; */
     font-weight: 250;
@@ -149,9 +149,9 @@ footer {
 }
 
 #input_group button {
-    background-color: var(--color-link-text);
+    background-color: var(--roxo-claro);
     border: none;
-    color: var(--color-text-e-icon);
+    color: var(--branco-leve);
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
