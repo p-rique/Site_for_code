@@ -12,10 +12,28 @@ li, a, button{
 }
 
 header{
+	background-color: var(--roxo-escuro);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 30px 10%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 130px; 
+}
+
+main{
+	padding: 70px;
 }
 
 .logo{
@@ -38,8 +56,36 @@ header{
 }
 
 .nav__links li a:hover {
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s;
 	color: #614AD3;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	position: absolute;
+	background-color: var(--roxo-escuro);
+	top: 45px;
+	left: 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	display: none;
+}
+
+.dropdown-content a {
+	padding: 10px 20px;
+	color: #ffff;
+}
+
+.dropdown-content a:hover {
+	background-color: var(--roxo-escuro);
+	color: var(--roxo-claro);
+}
+
+.dropdown:hover .dropdown-content {
+	display: flex;
 }
 
 button{

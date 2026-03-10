@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --roxo-escuro: #1e1647;
+  --roxo-claro: #614ad3;
+  --amarelo-classico: #ffff00;
+  --branco: #ffffff;
+  --gradiente-baixo: #9a4a4d;
+  --gradiente-topo: #161e47;
+  --gradiente-botao-1: #a210c2;
+  --gradiente-botao-2: #614ad3;
+  --gradiente-botao-3: #9483e4;
+  --tamanho-subtitulo: 3rem;
+  --tamanho-titulo: 12.5rem;
+  --tamanho-texto: 1.5rem;
+  --tamanho-texto-botao: 1rem;
+}

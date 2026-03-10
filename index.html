@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--Título e ícone da aba do navegador-->
+
     <link
       rel="shortcut icon"
       href="assets/for_code.ico"
@@ -19,14 +21,17 @@
     />
 
     <!--Links para os arquivos css-->
+
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/globalstyles.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/diretoria.css" />
-    <link rel="stylesheet" href="css/form.css  " />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/valores.css" />
-    <link rel="stylesheet" href="css/about.css  " />
-    <!-- ADICIONAR CSS DO STATISTICS -->
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/statistics.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -43,33 +48,26 @@
   </head>
 
   <body>
+
       <!--Header e Navegação-->
-    <header>
+
+      <header>
         <img class="logo" src="assets\logo_forcode.png" alt="Logo da for_code">
         <nav class="nav__links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem somos?</a></li>
-                <li><a href="#">Conquistas</a></li>              
+                <li><a href="#sobre">Home</a></li>
+                <li><a href="#diretoria">Quem somos?</a></li>
+                <li><a href="#stats">Conquistas</a></li>              
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contato</button></a>
-    </header>
+        <a class="cta" href="#contato"><button>Contato</button></a>
+      </header>
     <main>
+
       <!--Parte About us-->
 
-      <section class="sobre" style="padding: 50px 0">
-        <div
-          class="ẗitulo-sobre"
-          style="
-            text-align: right;
-            opacity: 0.1;
-            font-size: 80px;
-            font-weight: bold;
-            margin-bottom: -40px;
-            padding-right: 50px;
-          "
-        >
+      <section id="sobre" class="sobre" style="padding: 50px 0">
+        <div class="titulo-sobre">
           <h1 class="titulo-about">About Us</h1>
         </div>
 
@@ -126,239 +124,98 @@
       </section>
 
       <!-- Valores -->
+
       <section
         class="valores-container"
-        style="padding: 50px; text-align: center"
       >
-        <h2 class="titulo-sessao" style="font-size: 32px; margin-bottom: 40px">
+        <h2 class="titulo-sessao">
           <i class="fa-solid fa-hand-sparkles"></i> Valores
         </h2>
 
         <div
-          class="cards-grid"
-          style="
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-          "
+          class="cards-grid"        
         >
           <div
             class="card"
-            style="
-              background: rgba(138, 43, 226, 0.1);
-              border: 1px solid #8b5cf6;
-              padding: 30px;
-              border-radius: 15px;
-              width: 200px;
-            "
+            
           >
-            <h3 style="margin-bottom: 15px">
+            <h3>
               <i
                 class="fa-solid fa-brain"
-                style="font-size: 24px; margin-bottom: 10px; display: block"
+                
               ></i
               >Curiosidade
             </h3>
-            <p style="font-size: 13px; color: #ccc">
+            <p >
               Propósito de resolver problemas.
             </p>
           </div>
           <div
             class="card"
-            style="
-              background: rgba(138, 43, 226, 0.1);
-              border: 1px solid #8b5cf6;
-              padding: 30px;
-              border-radius: 15px;
-              width: 200px;
-            "
           >
-            <h3 style="margin-bottom: 15px">
+            <h3>
               <i
                 class="fa-solid fa-rocket"
-                style="font-size: 24px; margin-bottom: 10px; display: block"
               ></i
               >Simplicidade
             </h3>
-            <p style="font-size: 13px; color: #ccc">
+            <p>
               Feito é melhor que perfeito.
             </p>
           </div>
           <div
             class="card"
-            style="
-              background: rgba(138, 43, 226, 0.1);
-              border: 1px solid #8b5cf6;
-              padding: 30px;
-              border-radius: 15px;
-              width: 200px;
-            "
           >
-            <h3 style="margin-bottom: 15px">
+            <h3>
               <i
                 class="fa-solid fa-arrows-rotate"
-                style="font-size: 24px; margin-bottom: 10px; display: block"
               ></i
               >Comunicação
             </h3>
-            <p style="font-size: 13px; color: #ccc">
+            <p>
               Ligar boas ideias e criar soluções.
             </p>
           </div>
         </div>
       </section>
-      <!--Statistics ATUALIZAR --> 
-      <div
-        class="bg-text"
-        style="
-          position: absolute;
-          font-size: 8rem;
-          font-weight: 900;
-          color: rgba(255, 255, 255, 0.03);
-          z-index: 0;
-          pointer-events: none;
-        "
-      >
-        Statistics
-      </div>
-      <section
-        class="stats-section"
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 60px;
-          padding: 40px;
-          position: relative;
-          z-index: 1;
-        "
-      >
-        <div
-          class="stats-grid"
-          style="
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-          "
-        >
-          <div
-            class="stat-card"
-            style="
-              background: rgba(255, 255, 255, 0.03);
-              border: 1.5px solid rgba(138, 43, 226, 0.3);
-              border-radius: 24px;
-              padding: 40px 30px;
-              text-align: center;
-              width: 180px;
-            "
-          >
-            <span
-              class="icon"
-              style="font-size: 32px; margin-bottom: 20px; display: block"
-              ><i class="fa-solid fa-clipboard-check"></i
-            ></span>
-            <span
-              class="number"
-              style="font-size: 2.2rem; font-weight: 800; display: block"
-              >20+</span
-            >
-            <p class="label" style="color: #b0b0b0; font-size: 0.95rem">
-              Projetos Completos
-            </p>
-          </div>
-          <div
-            class="stat-card"
-            style="
-              background: rgba(255, 255, 255, 0.03);
-              border: 1.5px solid rgba(138, 43, 226, 0.3);
-              border-radius: 24px;
-              padding: 40px 30px;
-              text-align: center;
-              width: 180px;
-            "
-          >
-            <span
-              class="icon"
-              style="font-size: 32px; margin-bottom: 20px; display: block"
-              ><i class="fa-solid fa-folder-plus"></i
-            ></span>
-            <span
-              class="number"
-              style="font-size: 2.2rem; font-weight: 800; display: block"
-              >10+</span
-            >
-            <p class="label" style="color: #b0b0b0; font-size: 0.95rem">
-              Projetos Recentes
-            </p>
-          </div>
-          <div
-            class="stat-card"
-            style="
-              background: rgba(255, 255, 255, 0.03);
-              border: 1.5px solid rgba(138, 43, 226, 0.3);
-              border-radius: 24px;
-              padding: 40px 30px;
-              text-align: center;
-              width: 180px;
-            "
-          >
-            <span
-              class="icon"
-              style="font-size: 32px; margin-bottom: 20px; display: block"
-              ><i class="fa-solid fa-trophy"></i
-            ></span>
-            <span
-              class="number"
-              style="font-size: 2.2rem; font-weight: 800; display: block"
-              >20+</span
-            >
-            <p class="label" style="color: #b0b0b0; font-size: 0.95rem">
-              Competições
-            </p>
-          </div>
-          <div
-            class="stat-card"
-            style="
-              background: rgba(255, 255, 255, 0.03);
-              border: 1.5px solid rgba(138, 43, 226, 0.3);
-              border-radius: 24px;
-              padding: 40px 30px;
-              text-align: center;
-              width: 180px;
-            "
-          >
-            <span
-              class="icon"
-              style="font-size: 32px; margin-bottom: 20px; display: block"
-              ><i class="fa-solid fa-handshake"></i
-            ></span>
-            <span
-              class="number"
-              style="font-size: 2.2rem; font-weight: 800; display: block"
-              >3+</span
-            >
-            <p class="label" style="color: #b0b0b0; font-size: 0.95rem">
-              Clientes felizes
-            </p>
-          </div>
-        </div>
+
+      <!--Statistics--> 
+
+      <section class="stats-section" id="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="icon">🙋🏽‍♂️</span>
+                <span class="number">25+</span>
+                <p class="label">Membros Ativoss</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="icon">📝</span>
+                <span class="number">99%</span>
+                <p class="label">Satisfação dos Membros</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="icon">🏆</span>
+                <span class="number">7+</span>
+                <p class="label">Competições Participadas</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="icon">🤝</span>
+                <span class="number">10+</span>
+                <p class="label">Atuação em Projetos de Extensão</p>
+            </div>
+            </div>
+
         <div class="visual-container">
-          <img
-            src="assets/dashboard.png"
-            alt="Dashboard Statistics"
-            class="mockup-image"
-            style="
-              max-width: 100%;
-              border-radius: 12px;
-              filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.2));
-            "
-          />
+          <div class="bg-text">Statistics</div>
+          <img src="assets\statistics.png" alt="Dashboard Statistics" class="mockup-image">
         </div>
       </section>
 
       <!--Diretorias-->
-      <section class="diretoria">
+      <section id="diretoria" class="diretoria">
         <div class="container">
           <h1>Diretorias</h1>
 
@@ -447,117 +304,67 @@
       <!-- forms:contato -->
       <section
         class="contato"
-        id="contact"
-        style="
-          display: flex;
-          justify-content: space-around;
-          padding: 80px 50px;
-          margin-top: 50px;
-          flex-wrap: wrap;
-          position: relative;
-        "
+        
+        id="contato"
       >
         <!-- Texto GET IN TOUCH gigante de fundo -->
-        <div
-          style="
-            position: absolute;
-            top: -10px;
-            left: 50px;
-            font-size: 6rem;
-            font-weight: 900;
-            color: rgba(255, 255, 255, 0.03);
-            z-index: 0;
-            pointer-events: none;
-          "
-        >
+        <div class="getintouch">
           Get in touch
         </div>
 
         <!-- Coluna da Esquerda (Informações) -->
-        <div class="contato-info" style="max-width: 40%; z-index: 1">
-          <h2 style="font-size: 36px; margin-bottom: 20px">
+        <div class="contato-info">
+          <h2>
             Comunicação sem esforço, impacto global
           </h2>
-          <p
-            style="
-              color: #ccc;
-              margin-bottom: 40px;
-              font-size: 14px;
-              line-height: 1.6;
-            "
-          >
+          <p class="lorem_ipsum">
             Lorem ipsum dolor sit amet consectetur. Quam orci nunc faucibus
             sagittis quam varius malesuada semper. Urna fermentum viverra mattis
             pulvinar leo sem. Risus at nisl metus egestas.
           </p>
 
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              margin-bottom: 25px;
-            "
-          >
+          <div class="local">
             <i
               class="fa-solid fa-location-dot"
-              style="font-size: 24px; color: #8b5cf6"
             ></i>
             <div> 
               <!-- Levar para o CSS e adicionar margem -->
-              <h4 style="margin: 0; font-size: 16px">Localização</h4>
-              <p style="margin: 0; font-size: 13px; color: #ccc">
+              <h4 class="loc_title">Localização</h4>
+              <p class="loc_text">
                 Av. Athos da Silveira Ramos, 149 - Cidade Universitária da UFRJ,
                 Rio de Janeiro - RJ, 21941-909
               </p>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              margin-bottom: 25px;
-            "
-          >
+          <div class="email-bloco">
             <i
               class="fa-solid fa-envelope"
-              style="font-size: 24px; color: #8b5cf6"
             ></i>
             <div>
-              <h4 style="margin: 0; font-size: 16px">Email</h4>
-              <p style="margin: 0; font-size: 13px; color: #ccc">
+              <h4 class="email_title">Email</h4>
+              <p class="email_text">
                 forcodeufrj@gmail.com
               </p>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              margin-bottom: 25px;
-            "
-          >
+          <div class="phone-bloco">
             <i
               class="fa-solid fa-phone"
-              style="font-size: 24px; color: #8b5cf6"
             ></i>
             <div>
-              <h4 style="margin: 0; font-size: 16px">Telefone</h4>
-              <p style="margin: 0; font-size: 13px; color: #ccc">
+              <h4 class="phone_title">Telefone</h4>
+              <p class="phone_text">
                 +55 (21) 87445-5540
               </p>
             </div>
           </div>
-          <div style="display: flex; align-items: center; gap: 15px">
+          <div class="hours-bloco">
             <i
               class="fa-solid fa-clock"
-              style="font-size: 24px; color: #8b5cf6"
             ></i>
             <div>
-              <h4 style="margin: 0; font-size: 16px">Horário de trabalho</h4>
-              <p style="margin: 0; font-size: 13px; color: #ccc">
+              <h4 class="hours_title">Horário de trabalho</h4>
+              <p class="hours_text">
                 Segunda - Sexta 9 am - 18pm
               </p>
             </div>
@@ -566,118 +373,120 @@
 
         <!-- Formulário -->
         <div class="form-container">
-        <h2>Envie-nos uma mensagem</h2>
-        <p class="subtitle">Preencha os dados para iniciarmos o contato.</p>
+          <h2>Envie-nos uma mensagem</h2>
+          <p class="subtitle">Preencha os dados para iniciarmos o contato.</p>
 
-        <form id="contactForm">
-          <div class="input-group">
-            <input type="text" id="nome" placeholder="Nome" required />
-            <input type="email" id="e-mail" placeholder="E-mail" required />
-          </div>
-
-          <div class="input-group">
-            <input
-              type="tel"
-              id="phone"
-              placeholder="Telefone (DDD)00000-0000"
-            />
-            <input type="text" id="company" placeholder="Empresa" />
-          </div>
-
-          <div class="field-wrapper">
-            <input type="text" id="subject" placeholder="Assunto" required />
-          </div>
-
-          <div class="field-wrapper">
-            <textarea
-              id="message"
-              placeholder="Escreva sua mensagem aqui..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="send-btn">Enviar Mensagem</button>
-        </form>
-      </section>
-      <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <div id="footer_title">
-                <h1>for_code</h1>
-                <img src="assets/for_code_logo.png" alt="Logo for_code" id="footer_logo">
-                </div>
-                <div id="footer_subtitle">
-                    <p>Nossas redes sociais:</p>
-                </div>
-                <div id="footer_social_media">
-                    <a href="https://www.instagram.com/forcodeufrj/" target="_blank" class="footer-link" id="instagram">
-                        <img src="assets/redes_sociais/instagram_logo.webp" alt="Logo do Instagram" width=65% height=65%>
-                    </a>
-
-                    <a href="https://github.com/forcodeufrj" target="_blank" class="footer-link" id="github">
-                        <img src="assets/redes_sociais/github_logo.webp" alt="Logo do GitHub" width=100% height=100%>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/for-code" target="_blank" class="footer-link" id="linkedin">
-                        <img src="assets/redes_sociais/linkedin_logo.webp" alt="Logo do LinkedIn" width=65% height=65%>
-                    </a>
-                    <a href="https://www.youtube.com/@for_code" target="_blank" class="footer-link" id="youtube">
-                        <img src="assets/redes_sociais/youtube_logo.webp" alt="Logo do YouTube" width=65% height=65%>
-                    </a>
-                </div>
+          <form id="contactForm">
+            <div class="input-group">
+              <input type="text" id="nome" placeholder="Nome" required />
+              <input type="email" id="e-mail" placeholder="E-mail" required />
             </div>
 
-            <ul class="footer-list">
-                <li>
-                    <h3>Links úteis</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Equipe</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Eventos</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Conquistas</a>
-                </li>
-            </ul>
-                        <ul class="footer-contact-list">
-                <li>
-                    <h3>Contato</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Diretores</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Nos contate</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Feedback</a>
-                </li>
-            </ul>
-
-            <div id="footer_subscribe">
-                <h3>Fique por dentro!</h3>
-
-                <p>
-                    Insira seu e-mail para
-                    receber nossas novidades.
-                </p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        ✉︎
-                    </button>
-                </div>
+            <div class="input-group">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Telefone (DDD)00000-0000"
+              />
+              <input type="text" id="company" placeholder="Empresa" />
             </div>
+
+            <div class="field-wrapper">
+              <input type="text" id="subject" placeholder="Assunto" required />
+            </div>
+
+            <div class="field-wrapper">
+              <textarea
+                id="message"
+                placeholder="Escreva sua mensagem aqui..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="send-btn">Enviar Mensagem</button>
+
+          </form>
         </div>
-        <div id="footer_bottom">
-            <p>&copy; 2026 for_code. Todos os direitos reservados.</p>
-            </div>
-      </footer>      
-      
+      </section>
     </main>
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <div id="footer_title">
+              <h1>for_code</h1>
+              <img src="assets/for_code_logo.png" alt="Logo for_code" id="footer_logo">
+              </div>
+              <div id="footer_subtitle">
+                  <p>Nossas redes sociais:</p>
+              </div>
+              <div id="footer_social_media">
+                  <a href="https://www.instagram.com/forcodeufrj/" target="_blank" class="footer-link" id="instagram">
+                      <img src="assets/redes_sociais/instagram_logo.webp" alt="Logo do Instagram" width=65% height=65%>
+                  </a>
+
+                  <a href="https://github.com/forcodeufrj" target="_blank" class="footer-link" id="github">
+                      <img src="assets/redes_sociais/github_logo.webp" alt="Logo do GitHub" width=100% height=100%>
+                  </a>
+
+                  <a href="https://www.linkedin.com/company/for-code" target="_blank" class="footer-link" id="linkedin">
+                      <img src="assets/redes_sociais/linkedin_logo.webp" alt="Logo do LinkedIn" width=65% height=65%>
+                  </a>
+                  <a href="https://www.youtube.com/@for_code" target="_blank" class="footer-link" id="youtube">
+                      <img src="assets/redes_sociais/youtube_logo.webp" alt="Logo do YouTube" width=65% height=65%>
+                  </a>
+              </div>
+          </div>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Links úteis</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Equipe</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Eventos</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Conquistas</a>
+              </li>
+          </ul>
+                      <ul class="footer-contact-list">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Diretores</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Nos contate</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Feedback</a>
+              </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h3>Fique por dentro!</h3>
+
+              <p>
+                  Insira seu e-mail para
+                  receber nossas novidades.
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                      ✉︎
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div id="footer_bottom">
+          <p>&copy; 2026 for_code. Todos os direitos reservados.</p>
+          </div>
+    </footer>      
+      
+    
     
   </body>
   
